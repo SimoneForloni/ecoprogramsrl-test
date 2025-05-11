@@ -1,21 +1,21 @@
 :root {
-    --gradient-start: #1e90ff;
-    --gradient-end: #00ff7f;
-    --header-padding: 5px;
+  --gradient-start: #1e90ff;
+  --gradient-end: #00ff7f;
+  --header-padding: 5px;
 }
 
 [data-theme="light"] {
-    --header-bg-color: #ffffff;
-    --hero-bg-color: #ffffffa1;
-    --footer-bg-color: #f0f0f0;
-    --text-color: #1e1e1e;
+  --text-color: #1e1e1e;
+  --header-bg-color: #ffffff;
+  --hero-bg-color: #ffffffa1;
+  --footer-bg-color: #f0f0f0;
 }
 
 [data-theme="dark"] {
-    --header-bg-color: #1e1e1e;
-    --hero-bg-color: #000000a1;
-    --footer-bg-color: #1e1e1e;
-    --text-color: #ffffff;
+  --text-color: #ffffff;
+  --header-bg-color: #1e1e1e;
+  --hero-bg-color: #000000a1;
+  --footer-bg-color: #1e1e1e;
 }
 
 /* ===========================
@@ -23,67 +23,67 @@
 =========================== */
 
 body {
-    margin: 0;
-    padding-top: 150px;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
-    color: var(--text-color);
+  margin: 0;
+  padding-top: 150px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  color: var(--text-color);
 }
 
 /* ===========================
 Header e titolo principale
 =========================== */
 header {
-    height: 150px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--header-bg-color);
+  height: 150px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--header-bg-color);
 }
 
 /*============================
 Logo
 ===========================*/
 .logo {
-    position: relative;
-    width: 100px;
-    padding: 10px;
+  position: relative;
+  width: 100px;
+  padding: 10px;
 }
 
 [data-theme="light"] .dark-logo {
-    display: none;
+  display: none;
 }
 
 [data-theme="dark"] .light-logo {
-    display: none;
+  display: none;
 }
 
 #theme-toggle {
-    position: fixed;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  position: fixed;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 #theme-toggle:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 @media (pointer: coarse) {
-    #theme-toggle:hover {
-        transform: none;
-    }
+  #theme-toggle:hover {
+    transform: none;
+  }
 }
 
 #menu-toggle:focus {
-    outline: none;
+  outline: none;
 }
 
 /* ===========================
@@ -91,27 +91,27 @@ Sezione hero (intro)
 =========================== */
 
 .hero {
-    text-align: center;
-    background-color: var(--hero-bg-color);
-    padding: 20px;
+  text-align: center;
+  background-color: var(--hero-bg-color);
+  padding: 20px;
 }
 
 .hero h2 {
-    font-size: 2em;
-    margin: 0;
+  font-size: 2em;
+  margin: 0;
 }
 
 /* ===========================
 Footer
 =========================== */
 footer {
-    text-align: center;
-    background: var(--footer-bg-color);
-    padding: 20px;
-    margin-top: 2000px;
+  text-align: center;
+  background: var(--footer-bg-color);
+  padding: 20px;
+  margin-top: 2000px;
 }
 
 footer p {
-    margin: 0;
-    color: var(--text-color);
+  margin: 0;
+  color: var(--text-color);
 }
